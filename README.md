@@ -1,6 +1,57 @@
-# Getting Started with Create React App
+# GitHub Repository Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React.js application that allows users to connect to GitHub using authentication and view all their repositories in a beautiful, responsive interface.
+
+## Features
+
+- 🔐 GitHub Personal Access Token authentication
+- 📱 Responsive design that works on all devices
+- 🔍 Search and filter repositories
+- 📊 Repository statistics (stars, forks, language)
+- 🎨 Modern, beautiful UI with smooth animations
+- ⚡ Fast and efficient API calls
+- 🔄 Real-time repository information
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (version 14.0 or later)
+- npm or yarn package manager
+- A GitHub account
+
+## Setup Instructions
+
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Get GitHub Personal Access Token
+
+To use this application, you'll need a GitHub Personal Access Token:
+
+1. Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
+2. Click "Generate new token (classic)"
+3. Give your token a descriptive name (e.g., "Repository Viewer App")
+4. Select the following scopes:
+   - `repo` - Full control of private repositories
+   - `user` - Read user profile data
+   - `read:org` - Read organization membership
+5. Click "Generate token"
+6. **Important**: Copy the token immediately as you won't be able to see it again
+
+### 3. Run the Application
+```bash
+npm start
+```
+
+The application will open in your browser at `http://localhost:3000`.
+
+### 4. Login to GitHub
+
+1. Click the "Login with GitHub" button
+2. Paste your Personal Access Token when prompted
+3. The app will automatically fetch and display your repositories
 
 ## Available Scripts
 
