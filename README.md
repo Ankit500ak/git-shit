@@ -589,7 +589,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
 
-**Made with ❤️ by [Your Name](https://github.com/yourusername)**
+**Made with ❤️ by [Ankit500ak](https://github.com/Ankit500ak)**
 
 **⭐ Star this repo if you find it helpful!**
 
