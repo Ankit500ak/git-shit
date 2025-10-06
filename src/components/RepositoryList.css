@@ -947,3 +947,30 @@
     padding: 2rem 1rem;
   }
 }
+
+/* Share Button Styles */
+.btn-share {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: 2px solid transparent;
+  color: white;
+  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.3);
+}
+
+.btn-share:hover {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(79, 172, 254, 0.5);
+}
+
+.btn-manage-links {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border: 2px solid transparent;
+  color: white;
+  box-shadow: 0 6px 20px rgba(240, 147, 251, 0.3);
+}
+
+.btn-manage-links:hover {
+  background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(240, 147, 251, 0.5);
+}

@@ -29,6 +29,9 @@ export interface Repository {
   created_at: string;
   topics?: string[];
   size?: number;
+  fork?: boolean;
+  archived?: boolean;
+  homepage?: string;
 }
 
 function App() {
@@ -138,6 +141,7 @@ function App() {
           {isLoggedIn && !loading && !error && (
             <RepositoryList 
               repositories={repositories} 
+              user={user}
               onRefresh={fetchUserData}
             />
           )}

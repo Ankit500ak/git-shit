@@ -1,16 +1,21 @@
 import React, { useState, useMemo } from 'react';
 import { Repository } from '../App';
 import RepositoryCard from './RepositoryCard';
+import LinkSharingModal from './LinkSharingModal';
+import LinkManagement from './LinkManagement';
 import './RepositoryList.css';
 
 interface RepositoryListProps {
   repositories: Repository[];
+  user: any;
   onRefresh: () => void;
 }
 
-const RepositoryList: React.FC<RepositoryListProps> = ({ repositories, onRefresh }) => {
+const RepositoryList: React.FC<RepositoryListProps> = ({ repositories, user, onRefresh }) => {
   const [sortBy, setSortBy] = useState<'updated' | 'created' | 'name' | 'stars'>('updated');
   const [searchTerm, setSearchTerm] = useState('');
+  const [showShareModal, setShowShareModal] = useState(false);
+  const [showLinkManagement, setShowLinkManagement] = useState(false);
 
   const filteredAndSortedRepos = useMemo(() => {
     let filtered = repositories.filter(repo =>
@@ -64,6 +69,20 @@ const RepositoryList: React.FC<RepositoryListProps> = ({ repositories, onRefresh
             onChange={(e) => setSearchTerm(e.target.value)}
             className="search-input"
           />
+          <button 
+            onClick={() => setShowShareModal(true)} 
+            className="btn btn-share"
+            title="Share your repositories"
+          >
+            <i className="fas fa-share-alt"></i> Share
+          </button>
+          <button 
+            onClick={() => setShowLinkManagement(true)} 
+            className="btn btn-manage-links"
+            title="Manage your shared links"
+          >
+            <i className="fas fa-cog"></i> Manage Links
+          </button>
           <button onClick={onRefresh} className="btn btn-secondary">
             <i className="fas fa-sync-alt"></i> Refresh
           </button>
@@ -83,6 +102,22 @@ const RepositoryList: React.FC<RepositoryListProps> = ({ repositories, onRefresh
             <RepositoryCard key={repo.id} repository={repo} />
           ))}
         </div>
+      )}
+      
+      {showShareModal && (
+        <LinkSharingModal
+          repositories={repositories}
+          user={user}
+          isOpen={showShareModal}
+          onClose={() => setShowShareModal(false)}
+        />
+      )}
+      
+      {showLinkManagement && (
+        <LinkManagement
+          user={user}
+          onClose={() => setShowLinkManagement(false)}
+        />
       )}
     </div>
   );
