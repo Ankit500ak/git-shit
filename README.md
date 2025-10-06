@@ -114,7 +114,7 @@ Ensure you have the following installed:### 4. Login to GitHub
 
 # Clone the repositoryIn the project directory, you can run:
 
-git clone https://github.com/yourusername/github-repo-viewer.git
+git clone https://github.com/Ankit500ak/git-shit
 
 ### `npm start`
 
@@ -580,10 +580,10 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📞 Support
 
-- **Documentation**: [Wiki](https://github.com/yourusername/github-repo-viewer/wiki)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/github-repo-viewer/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/github-repo-viewer/discussions)
-- **Email**: support@yourapp.com
+- **Documentation**: [Wiki](https://github.com/Ankit500ak/git-shit/wiki)
+- **Issues**: [GitHub Issues](https://github.com/Ankit500ak/git-shit/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Ankit500ak/git-shit/discussions)
+- **Email**: ankit200211222@gmail.com
 
 ---
 
