@@ -1,42 +1,23 @@
-# 🚀 GitHub Repository Viewer & Link Sharing Platform# GitHub Repository Viewer
+# 🚀 GitHub Repository Viewer & Link Sharing Platform
 
+<div align="center">
 
-
-<div align="center">A modern React.js application that allows users to connect to GitHub using authentication and view all their repositories in a beautiful, responsive interface.
-
-
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)## Features
-
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![GitHub API](https://img.shields.io/badge/github%20API-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)
 
-![GitHub API](https://img.shields.io/badge/github%20API-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)- 🔐 GitHub Personal Access Token authentication
+**A modern React.js application that connects to GitHub via Personal Access Tokens, displays repositories in a beautiful interface, and enables secure link sharing with intelligent uptime management and automatic expiration handling.**
 
-![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)- 📱 Responsive design that works on all devices
-
-- 🔍 Search and filter repositories
-
-**A modern React.js application with advanced link sharing capabilities, GitHub authentication, and intelligent repository management with proper uptime handling.**- 📊 Repository statistics (stars, forks, language)
-
-- 🎨 Modern, beautiful UI with smooth animations
-
-[Features](#-features) •- ⚡ Fast and efficient API calls
-
-[Quick Start](#-quick-start) •- 🔄 Real-time repository information
-
+[Features](#-features) •
+[Quick Start](#-quick-start) •
 [Link Sharing](#-link-sharing-system) •
-
-[API Reference](#-api-reference) •## Prerequisites
-
+[API Reference](#-api-reference) •
 [Contributing](#-contributing)
 
-Before you begin, ensure you have the following installed:
+</div>
 
-</div>- Node.js (version 14.0 or later)
-
-- npm or yarn package manager
-
----- A GitHub account
+---
 
 
 
