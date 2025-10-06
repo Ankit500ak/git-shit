@@ -36,7 +36,16 @@ const RepositoryList: React.FC<RepositoryListProps> = ({ repositories, onRefresh
   return (
     <div className="repos-section">
       <div className="repos-header">
-        <h2>Your Repositories ({repositories.length})</h2>
+        <h2>
+          <div className="repos-icon">
+            <i className="fas fa-folder-open"></i>
+          </div>
+          <span className="repos-title-text">Your Repositories</span>
+          <div className="repo-count-badge">
+            <i className="fas fa-database"></i>
+            <span className="repo-count-number">{repositories.length}</span>
+          </div>
+        </h2>
         <div className="filters">
           <select
             value={sortBy}
